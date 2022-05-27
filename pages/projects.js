@@ -2,8 +2,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { Header } from "../components/Atoms";
-import { Menu } from "../components/molecules";
+import { DataHead, Header } from "../components/Atoms";
+import { Main, Menu } from "../components/molecules";
 import Skill from "../components/molecules/Skill";
 import { IcPanah } from "../src/assets";
 import { IcSource } from "../src/assets/icons/index copy";
@@ -58,9 +58,9 @@ export default function Projects() {
     },
   ];
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <Menu />
-      <Header title='projects' subtitle='Some collection of my past works.' />
+    <Main>
+      <DataHead title="Projects | Suraji" />
+      <Header title="projects" subtitle="Some collection of my past works." />
       {projects.map((project, index) => {
         return (
           <div
@@ -117,6 +117,6 @@ export default function Projects() {
           </div>
         );
       })}
-    </div>
+    </Main>
   );
 }

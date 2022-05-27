@@ -16,15 +16,16 @@ export default function Menu() {
       title: "projects",
     },
   ];
+
   return (
     <div className="flex justify-between items-center">
-      <span className="uppercase">
-        <Link href="/">~~ ajidk</Link>
-      </span>
-      <div className="flex gap-x-4">
+      <div className="flex gap-x-2 items-center">
+        <span className="uppercase text-base mr-10">
+          <Link href="/">ajidk</Link>
+        </span>
         {menus.map((menu, index) => (
           <Link href={menu.link} key={index}>
-            <span className="capitalize my-3 py-2 px-4 hover:rounded-md hover:bg-green-300 cursor-pointer">
+            <span className="capitalize my-3 text-sm py-2 px-5 hover:rounded-md hover:bg-green-500 hover:text-white cursor-pointer">
               {menu.title}
             </span>
           </Link>

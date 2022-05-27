@@ -1,16 +1,19 @@
 import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
-import { Header } from "../../components/Atoms";
-import { Menu } from "../../components/molecules";
+import { DataHead, Header } from "../../components/Atoms";
+import { Main, Menu } from "../../components/molecules";
 import { getAllBlogs } from "../../lib/blogs";
 
 export default function index({ allPosts }) {
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <Menu />
-      <Header title='blogs' subtitle='Some tech stuff and my random thoughts.' />
-      <div className="grid grid-cols-2 gap-4">
+    <Main>
+      <DataHead title="Blogs | Suraji" />
+      <Header
+        title="blogs"
+        subtitle="Some tech stuff and my random thoughts."
+      />
+      <div className="grid grid-cols-3 gap-4">
         {allPosts.map((blog, index) => {
           const { coverImage, excerpt, title, date, slug } = blog;
 
@@ -25,7 +28,7 @@ export default function index({ allPosts }) {
                     src={coverImage}
                     alt={title}
                     width={500}
-                    height={250}
+                    height={400}
                     className="rounded-md"
                   />
                   <div className="p-2">
@@ -46,7 +49,7 @@ export default function index({ allPosts }) {
           );
         })}
       </div>
-    </div>
+    </Main>
   );
 }
 
