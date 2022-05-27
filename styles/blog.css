@@ -1,0 +1,82 @@
+.bg-base {
+    background-color: #e5e5e5;
+}
+
+.CodeMirror {
+    @apply text-lg p-2
+}
+
+.gradien-button {
+    @apply bg-gradient-to-tr from-blue-400 to-blue-500 font-light px-4 py-2 rounded text-white hover:from-pink-500 hover:to-purple-500
+}
+
+.blog-content-body {
+    @apply py-4 text-gray-700
+}
+
+.blog-content-body blockquote{
+    @apply border-l-4 border-sky-500 px-4 bg-blue-50 italic my-2
+}
+
+.blog-content-body p {
+    @apply py-2 text-lg
+}
+
+.blog-content-body h2 {
+    @apply pb-2 pt-6 text-4xl font-semibold text-gray-700
+}
+
+.blog-content-body h3 {
+    @apply pb-2 pt-6 text-3xl font-semibold text-gray-700
+}
+
+.blog-content-body a {
+    @apply text-rose-500 font-medium hover:border-b hover:border-rose-600
+}
+
+.blog-content-body ul, ol {
+    @apply pl-6 my-3 ml-4
+}
+
+.blog-content-body ul > li {
+    @apply list-disc leading-7 text-base
+}
+
+.blog-content-body ol {
+    @apply pl-6 list-decimal
+}
+
+.blog-content-body h2 code {
+    @apply px-2 rounded-md
+}
+
+.blog-content-body h3 code {
+    @apply bg-gray-300 px-2 rounded-md
+}
+
+.blog-content-body li code {
+    color: #9144c5;
+    @apply text-sm font-bold
+}
+
+.blog-content-body ol code {
+    @apply bg-gray-300 px-2 py-1 mx-1 rounded-md text-sm
+}
+
+.blog-content-body pre code {
+    @apply px-0 bg-auto
+}
+
+.blog-content-body p code {
+    @apply text-gray-800;
+    padding: 3px 4px;
+    border-radius: 13% 0.2rem 20% 0.2rem;
+    /* background-image: linear-gradient(-100deg, rgb(0 188 212 / 5%), #03a9f4bf 95%, rgb(184 205 185 / 10%)) */
+}
+
+.blog-content-body h2 code {
+    @apply text-gray-800;
+    padding: 3px 6px;
+    border-radius: 13% 0.2rem 20% 0.2rem;
+    background-image: linear-gradient(-100deg, rgb(0 188 212 / 5%), #03a9f4bf 95%, rgb(184 205 185 / 10%))
+}

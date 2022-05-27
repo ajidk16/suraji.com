@@ -1,0 +1,18 @@
+@font-face {
+  font-family: "Cal Sans";
+  src: url("/cal.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Cal Sans";
+  @apply tracking-wide;
+}
+
+.font-cal {
+  font-family: "Cal Sans";
+}
