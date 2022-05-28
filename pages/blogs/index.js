@@ -2,7 +2,7 @@ import { format, parseISO } from "date-fns";
 import Image from "next/image";
 import Link from "next/link";
 import { DataHead, Header } from "../../components/Atoms";
-import { Main, Menu } from "../../components/molecules";
+import { Main } from "../../components/molecules";
 import { getAllBlogs } from "../../lib/blogs";
 
 export default function index({ allPosts }) {
@@ -25,7 +25,7 @@ export default function index({ allPosts }) {
               <Link href={`/blogs/${encodeURIComponent(slug)}`}>
                 <div>
                   <Image
-                    src={coverImage}
+                    src={coverImage || ''}
                     alt={title}
                     width={500}
                     height={400}
