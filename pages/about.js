@@ -12,8 +12,8 @@ export default function About() {
           <img
             src="https://lh3.googleusercontent.com/a-/AOh14Gjy29wgdj5H37sfoXKmvPOrGsQzDEyUf89bQYmKHg=s288-p-rw-no"
             alt="suraji"
-            width={250}
-            height={250}
+            width={230}
+            height={230}
             className="rounded-full border-8 border-green-500"
           />
           <div>
