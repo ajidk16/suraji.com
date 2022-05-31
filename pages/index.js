@@ -45,7 +45,7 @@ export default function Home({ allPosts }) {
   return (
     <Main>
       <DataHead title="Home | Suraji" />
-      <main className="flex gap-y-32 flex-col justify-center h-screen">
+      <main className="flex gap-y-10 flex-col justify-center h-screen">
         <section className="flex items-center justify-between">
           <div className="gap-5 flex flex-col w-[43%]">
             <h1 className="text-gray-700 text-5xl font-bold text-center sm:text-left">

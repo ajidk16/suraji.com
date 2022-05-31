@@ -32,7 +32,7 @@ export default function About() {
               Offering strong expertise in multiple programming languages,
               including HTML, CSS, and Javascript Seeking to secure a
               challenging position as a Mobile React Native or Web Frontend
-              Enginee
+              Engineer
             </p>
           </div>
         </div>

@@ -12,8 +12,8 @@ export default function Menu() {
       title: "blogs",
     },
     {
-      link: "/projects",
-      title: "projects",
+      link: "/contact",
+      title: "contact",
     },
   ];
 
