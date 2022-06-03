@@ -1,12 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import Link from "next/link";
-import React from "react";
+import { IcPanah, IcSource } from "../assets/icons";
 import { DataHead, Header } from "../components/Atoms";
-import { Main, Menu } from "../components/molecules";
+import { Main } from "../components/molecules";
 import Skill from "../components/molecules/Skill";
-import { IcPanah } from "../src/assets";
-import { IcSource } from "../src/assets/icons/index copy";
 
 export default function Projects() {
   const projects = [
