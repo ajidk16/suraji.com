@@ -5,6 +5,9 @@ import IcFacebook from "./facebook.svg";
 import IcLinkedin from "./linkedin.svg";
 import IcInstagram from "./instagram.svg";
 import IcEmail from "./email.svg";
+import IcWa from "./whatsapp.svg";
+import IcEnvelope from "./envelope.svg";
+import IcSource from "./source.svg";
 
 export {
   IcPanah,
@@ -14,4 +17,7 @@ export {
   IcLinkedin,
   IcInstagram,
   IcEmail,
+  IcWa,
+  IcEnvelope,
+  IcSource
 };

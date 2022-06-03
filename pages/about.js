@@ -1,41 +1,45 @@
 /* eslint-disable @next/next/no-img-element */
+import Image from "next/image";
+import { Suraji } from "../assets/images";
 import { DataHead } from "../components/Atoms";
 import { Main } from "../components/molecules";
+import List from "../components/molecules/List";
+import { dream, likes } from "../utils/about";
 
 export default function About() {
   return (
     <Main>
       <DataHead title="About | Suraji" />
-
-      <main className="flex flex-col gap-y-4 mt-16">
-        <div className="flex items-center gap-x-20">
-          <img
-            src="https://lh3.googleusercontent.com/a-/AOh14Gjy29wgdj5H37sfoXKmvPOrGsQzDEyUf89bQYmKHg=s288-p-rw-no"
+      <main className="flex justify-between flex-col  gap-y-6 mt-10 mx-16">
+        <div className="flex justify-center">
+          <Image
+            src={Suraji}
             alt="suraji"
-            width={230}
-            height={230}
+            width={250}
+            height={250}
             className="rounded-full border-8 border-green-500"
           />
-          <div>
-            <div className="text-gray-700 text-2xl font-bold text-center sm:text-left">
-              My name is Suraji, I&apos;m a fronted developer
-            </div>
-            <br />
-            <p>
-              Hi, I’am Suraji from Metro Lampung, Mobile & Web Frontend Engineer
-              with 2+ Years Experience in developing user interfaces. debugging
-              and building a web and mobile applications incorporating a range
-              of technologies.
-            </p>
-            <br />
-            <p>
-              Offering strong expertise in multiple programming languages,
-              including HTML, CSS, and Javascript Seeking to secure a
-              challenging position as a Mobile React Native or Web Frontend
-              Engineer
-            </p>
-          </div>
         </div>
+        <div className="text-gray-700 text-5xl font-bold text-center capitalize">
+          Hi 👋, thanks for <br />
+          stoping by.
+        </div>
+        <section>
+          <p>
+            I&apos;am Suraji from Metro Lampung, Mobile & Web Frontend Engineer
+            with 2+ Years Experience in developing user interfaces. debugging
+            and building a web and mobile applications incorporating a range of
+            technologies.
+          </p>
+          <br />
+          <p>
+            Offering strong expertise in multiple programming languages,
+            including HTML, CSS, and Javascript Seeking to secure a challenging
+            position as a Mobile React Native or Web Frontend Engineer
+          </p>
+        </section>
+        <List title="i like" content={likes} />
+        <List title="i dream of" content={dream} />
       </main>
     </Main>
   );

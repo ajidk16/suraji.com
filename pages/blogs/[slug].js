@@ -1,17 +1,15 @@
 import { getAllBlogs, getblogBySlug } from "../../lib/blogs";
 import markdownToHtml from "../../lib/markdownToHtml";
 
-import React from "react";
-import { useRouter } from "next/router";
-import Link from "next/link";
 import { format, parseISO } from "date-fns";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import { BlogGithub, Menu } from "../../components/molecules";
 
-export default function Blog({ blog, morePost, preview }) {
+export default function Blog({ blog }) {
   const router = useRouter();
   !router.isFallback && !blog?.slug ? "error" : null;
-  console.log(blog);
-  console.log(`router : ${router}`);
+
   return (
     <div className="w-full max-w-5xl mx-auto">
       <Menu />

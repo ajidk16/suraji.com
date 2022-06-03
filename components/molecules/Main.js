@@ -4,7 +4,7 @@ import Menu from "./Menu";
 
 export default function Main({ children }) {
   return (
-    <div className="w-full max-w-5xl mx-auto p-4 text-gray-800 h-screen flex flex-col">
+    <div className="w-full max-w-5xl mx-auto p-4 text-gray-800 h-screen flex flex-col font-mono">
       <Menu />
       {children}
       <footer className="text-center mt-auto pt-10">
