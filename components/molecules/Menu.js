@@ -14,6 +14,10 @@ export default function Menu() {
       title: "blogs",
     },
     {
+      link: "/portfolio",
+      title: "portfolio",
+    },
+    {
       link: "/contact",
       title: "contact",
     },

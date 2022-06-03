@@ -46,7 +46,7 @@ export default function Home({ allPosts }) {
           </div>
           <div className="grid grid-flow-col items-center gap-x-4">
             <button className="bg-green-500 hover:bg-transparent hover:border-2 hover:py-[6px] hover:border-green-500 hover:text-black py-2 px-5 text-white rounded-lg w-full">
-              <Link href="/projects">Experiences</Link>
+              <Link href="/experience">Experiences</Link>
             </button>
             <button className="border-2 border-green-500 hover:bg-green-500 hover:text-white py-[6px] px-5 text-black rounded-lg w-full">
               <Link href="/about">Skill</Link>

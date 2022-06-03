@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import { portofolio1 } from "../assets";
 import { IcPanah, IcSource } from "../assets/icons";
 import { DataHead, Header } from "../components/Atoms";
 import { Main } from "../components/molecules";
@@ -8,19 +9,19 @@ import Skill from "../components/molecules/Skill";
 export default function Projects() {
   const projects = [
     {
-      img: "https://www.wisesa.dev/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Finterfest-2019.31556901.jpg&w=640&q=75",
+      img: portofolio1,
       title: "Quoteit! twitter bot",
       date: "June 2019",
       content:
         "Quoteitbot is a bot that generates an image based on a tweet that you mentioned using an image from unsplash.",
       skill: [
         {
-          title: "javascript",
-          background: "bg-yellow-300",
+          title: "tailwind",
+          background: "bg-[#38BDF8]",
         },
         {
-          title: "php",
-          // background: "",
+          title: "next.js",
+          background: "bg-white",
         },
         {
           title: "html",
@@ -31,32 +32,32 @@ export default function Projects() {
       linkSource: "",
     },
     {
-      img: "https://pbs.twimg.com/media/FTuYdtiaMAAOkKI?format=jpg&name=900x900",
-      title: "Quoteit! twitter bot",
-      date: "June 2019",
+      img: portofolio1,
+      title: "My first portfolio using next.JS",
+      date: "June 2020",
       content:
-        "Quoteitbot is a bot that generates an image based on a tweet that you mentioned using an image from unsplash.",
+        "this project contains dashboard, about, resume, project, contact. This UI is from MICHAEL D'ANGELO for a tailwind slicing practice.",
       skill: [
         {
-          title: "javascript",
-          background: "bg-yellow-300",
+          title: "tailwind",
+          background: "bg-[#38BDF8]",
         },
         {
-          title: "php",
-          // background: "",
+          title: "next.js",
+          background: "bg-black text-white",
         },
         {
-          title: "html",
-          // background: "",
+          title: "react",
+          background: "bg-[#61DAFB]",
         },
       ],
-      linkVisit: "https://ajidk.vercel.app/",
-      linkSource: "https://github.com/ajidk/tailwind-thebox",
+      // linkVisit: "",
+      linkSource: "https://github.com/ajidk/portofolio",
     },
   ];
   return (
     <Main>
-      <DataHead title="Projects | Suraji" />
+      <DataHead title="Project | Suraji" />
       <Header title="projects" subtitle="Some collection of my past works." />
       {projects.map((project, index) => {
         return (
@@ -65,10 +66,12 @@ export default function Projects() {
             className="grid grid-cols-2 border-2 border-dashed rounded border-gray-200 items-center mb-4"
           >
             <div>
-              <img
+              <Image
                 src={project.img}
                 alt="random"
                 className="h-80 w-full rounded"
+                height={300}
+                width={500}
               />
             </div>
             <div className="px-4 flex flex-col">
@@ -92,13 +95,15 @@ export default function Projects() {
                 })}
               </div>
               <div className="flex mt-4 space-x-4 items-center">
-                <a
-                  className="font-semibold text-lg flex items-center gap-x-2"
-                  href={project.linkVisit}
-                  target="__blank"
-                >
-                  <Image src={IcPanah} alt="panah" /> Visit Project
-                </a>
+                {project.linkVisit && (
+                  <a
+                    className="font-semibold text-lg flex items-center gap-x-2"
+                    href={project.linkVisit}
+                    target="__blank"
+                  >
+                    <Image src={IcPanah} alt="panah" /> Visit Project
+                  </a>
+                )}
                 {project.linkSource && (
                   <a
                     className="font-semibold text-lg flex items-center gap-x-2"
