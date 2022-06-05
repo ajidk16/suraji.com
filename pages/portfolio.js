@@ -80,7 +80,7 @@ export default function Projects() {
   ];
   return (
     <Main height="h-auto">
-      <DataHead title="Portfolio | Suraji" />
+      <DataHead title="Portfolio" />
       <main className="mt-7">
         <Header
           title="portfolio"
