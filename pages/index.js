@@ -10,12 +10,12 @@ export default function Home({ allPosts }) {
   return (
     <Main>
       <DataHead title="Home | Suraji" />
-      <section className="flex items-center gap-y-4 sm:gap-y-0 flex-col-reverse sm:flex-row sm:justify-between">
-        <div className="sm:gap-5 flex flex-col sm:w-[43%]">
-          <h1 className="text-gray-700 text-4xl sm:text-5xl mb-4 sm:mb-0 font-bold text-center sm:text-left hidden sm:flex">
+      <section className="flex items-center gap-y-4 lg:gap-y-0 flex-col-reverse lg:flex-row lg:justify-between">
+        <div className="lg:gap-5 flex flex-col lg:w-[43%]">
+          <h1 className="text-gray-700 text-4xl lg:text-5xl mb-4 lg:mb-0 font-bold text-center lg:text-left hidden lg:flex">
             Hi 👋 <br /> I&apos;m Suraji
           </h1>
-          <p className="text-center sm:text-left">
+          <p className="text-center lg:text-left">
             Software engineer specializing in fronted development and I am
             currently looking for a Job.
           </p>
@@ -28,7 +28,7 @@ export default function Home({ allPosts }) {
           priority
           className="rounded-full border-8 border-green-500"
         />
-        <h1 className="text-gray-700 text-4xl sm:text-5xl mb-4 sm:mb-0 font-bold text-center sm:text-left sm:hidden">
+        <h1 className="text-gray-700 text-4xl lg:text-5xl mb-4 lg:mb-0 font-bold text-center lg:text-left lg:hidden">
           Hi 👋 <br /> I&apos;m Suraji
         </h1>
       </section>
@@ -49,7 +49,7 @@ export default function Home({ allPosts }) {
             <Link href="/experience">Experiences</Link>
           </button>
           <button className="border-2 border-green-500 hover:bg-green-500 hover:text-white py-[6px] px-5 text-black rounded-lg w-full">
-            <Link href="/about">Skill</Link>
+            <Link href="/skill">Skill</Link>
           </button>
         </div>
       </section>

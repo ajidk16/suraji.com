@@ -13,8 +13,8 @@ export default function Blog({ blog }) {
   return (
     <div className="w-full max-w-5xl mx-auto">
       <Menu />
-      <div className="flex flex-col px-5 sm:px-0 mt-7">
-        <div className="text-4xl sm:text-6xl hover:underline">
+      <div className="flex flex-col px-5 lg:px-0 mt-7">
+        <div className="text-4xl lg:text-6xl hover:underline">
           <Link href={`${encodeURIComponent(blog.slug)}/`}>{blog.title}</Link>
         </div>
         <p className="mt-4">{blog.excerpt}</p>

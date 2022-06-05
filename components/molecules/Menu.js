@@ -28,7 +28,7 @@ export default function Menu() {
   return (
     <main className="sticky top-0 z-50 bg-white">
       {Menu === true && (
-        <div className="absolute bg-green-500 w-full h-screen py-2 sm:hidden">
+        <div className="absolute bg-green-500 w-full h-screen py-2 lg:hidden">
           <div className="flex justify-between px-5 items-center text-white">
             <div
               className={`uppercase font-extrabold text-2xl mr-10`}
@@ -61,7 +61,7 @@ export default function Menu() {
           </div>
         </div>
       )}
-      <div className="flex justify-between py-2 sm:hidden px-5 items-center">
+      <div className="flex justify-between py-2 lg:hidden px-5 items-center">
         <div className={`uppercase font-extrabold text-2xl mr-10`}>
           <Link href="/">ajidk</Link>
         </div>
@@ -69,7 +69,7 @@ export default function Menu() {
           ☰
         </button>
       </div>
-      <div className="hidden sm:flex justify-between items-center">
+      <div className="hidden px-5 lg:px-0 lg:flex justify-between items-center">
         <span className="uppercase text-base font-extrabold mr-10">
           <Link href="/">ajidk</Link>
         </span>

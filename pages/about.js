@@ -20,7 +20,7 @@ export default function About() {
             className="rounded-full border-8 border-green-500"
           />
         </div>
-        <div className="text-gray-700 text-3xl sm:text-5xl font-bold text-center capitalize">
+        <div className="text-gray-700 text-3xl lg:text-5xl font-bold text-center capitalize">
           Hi 👋, thanks for <br />
           stoping by.
         </div>

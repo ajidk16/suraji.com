@@ -8,7 +8,7 @@ export default function Experience() {
     <div className="max-w-4xl mx-auto font-mono">
       <DataHead title="Experience" />
       <Menu />
-      <main className="px-5 sm:mx-20">
+      <main className="px-5 lg:mx-20">
         <Header title="Experiences 🔥" className="text-center mt-7 mb-10" />
         {experiences.map((experience, index) => {
           const { start_date, end_date, company, position, duty } = experience;

@@ -21,15 +21,15 @@ export default function Contact() {
     window.open(wa, "_blank");
   };
   return (
-    <Main height="sm:h-screen h-screen">
+    <Main height="lg:h-screen h-screen">
       <DataHead title="Contact" />
-      <section className="grid gap-y-10 sm:gap-y-0 sm:grid-cols-2">
+      <section className="grid gap-y-10 lg:gap-y-0 lg:grid-cols-2">
         <div className="flex justify-evenly flex-col">
           <div>
             <div className="text-5xl -ml-1">Let`s talk</div>
             <p>Ask us anything or just say hi...</p>
           </div>
-          <div className="hidden sm:block">
+          <div className="hidden lg:block">
             <a href="#" className="flex items-center gap-x-4">
               <Image src={IcWa} alt="envelope" />
               <span>0851-5771-1650</span>
@@ -80,7 +80,7 @@ export default function Contact() {
           </div>
         </div>
       </section>
-      <section className="flex justify-center sm:justify-end items-center gap-x-4">
+      <section className="flex justify-center lg:justify-end items-center gap-x-4">
         {contacts.slice(1).map((contact, index) => (
           <Image
             key={index}
