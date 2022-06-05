@@ -1,5 +1,5 @@
 import React from "react";
-import { DataHead, Header, Menu } from "../components";
+import { DataHead, Footer, Header, Menu } from "../components";
 import ListItem from "../components/molecules/ListItem";
 import { experiences } from "../utils/experience";
 
@@ -24,6 +24,7 @@ export default function Experience() {
           );
         })}
       </main>
+      <Footer />
     </div>
   );
 }

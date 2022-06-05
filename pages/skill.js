@@ -1,4 +1,4 @@
-import { DataHead, Header, Menu } from "../components";
+import { DataHead, Footer, Header, Menu } from "../components";
 import { skills } from "../utils/skills";
 
 
@@ -19,6 +19,7 @@ export default function Skill() {
           );
         })}
       </main>
+      <Footer />
     </div>
   );
 }
