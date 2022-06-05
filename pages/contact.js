@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { useForm } from "react-hook-form";
 import { IcEnvelope, IcWa } from "../assets/icons";
-import { Input, Main } from "../components";
+import { DataHead, Input, Main } from "../components";
 import { contacts } from "../utils/general";
 
 export default function Contact() {
@@ -15,22 +15,21 @@ export default function Contact() {
     formState: { errors },
   } = useForm();
   const onSubmit = (data) => {
-    // console.log(data);
     let message = `nama: ${data.name}%0aemail: ${data.email}%0a%0a%0a%0a${data.message}`;
-    console.log(message.replace(" ", "%20"));
     message = message.replace(" ", "%20");
     const wa = `https://api.whatsapp.com/send?phone=6285157711650&text=${message}`;
     window.open(wa, "_blank");
   };
   return (
-    <Main title="contant">
-      <section className="grid grid-cols-2 h-[100vh]">
+    <Main height="sm:h-screen h-screen">
+      <DataHead title="Contact" />
+      <section className="grid gap-y-10 sm:gap-y-0 sm:grid-cols-2">
         <div className="flex justify-evenly flex-col">
           <div>
             <div className="text-5xl -ml-1">Let`s talk</div>
             <p>Ask us anything or just say hi...</p>
           </div>
-          <div>
+          <div className="hidden sm:block">
             <a href="#" className="flex items-center gap-x-4">
               <Image src={IcWa} alt="envelope" />
               <span>0851-5771-1650</span>
@@ -79,37 +78,19 @@ export default function Contact() {
               </div>
             </form>
           </div>
-          <div className="flex justify-end items-center gap-x-4">
-            {contacts.slice(1).map((contact, index) => (
-              <Image
-                key={index}
-                src={contact.icon}
-                width={25}
-                height={25}
-                alt={contact.alt}
-              />
-            ))}
-          </div>
         </div>
       </section>
-      {/* <ul className="break-words">
-        {contacts.map((contact, i) => (
-          <li key={i} className="mt-4">
-            <span className="capitalize">{contact.alt}</span> -{" "}
-            <a
-              href={`${
-                contact.alt === "email"
-                  ? "mailto:" + contact.link
-                  : contact.link
-              }`}
-              target="__blank"
-              className="underline"
-            >
-              {contact.link}
-            </a>
-          </li>
+      <section className="flex justify-center sm:justify-end items-center gap-x-4">
+        {contacts.slice(1).map((contact, index) => (
+          <Image
+            key={index}
+            src={contact.icon}
+            width={25}
+            height={25}
+            alt={contact.alt}
+          />
         ))}
-      </ul> */}
+      </section>
     </Main>
   );
 }

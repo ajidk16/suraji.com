@@ -8,9 +8,9 @@ import { dream, likes } from "../utils/about";
 
 export default function About() {
   return (
-    <Main>
+    <Main height={null}>
       <DataHead title="About | Suraji" />
-      <main className="flex justify-between flex-col  gap-y-6 mt-10 mx-16">
+      <section>
         <div className="flex justify-center">
           <Image
             src={Suraji}
@@ -20,27 +20,27 @@ export default function About() {
             className="rounded-full border-8 border-green-500"
           />
         </div>
-        <div className="text-gray-700 text-5xl font-bold text-center capitalize">
+        <div className="text-gray-700 text-3xl sm:text-5xl font-bold text-center capitalize">
           Hi 👋, thanks for <br />
           stoping by.
         </div>
-        <section>
-          <p>
-            I&apos;am Suraji from Metro Lampung, Mobile & Web Frontend Engineer
-            with 2+ Years Experience in developing user interfaces. debugging
-            and building a web and mobile applications incorporating a range of
-            technologies.
-          </p>
-          <br />
-          <p>
-            Offering strong expertise in multiple programming languages,
-            including HTML, CSS, and Javascript Seeking to secure a challenging
-            position as a Mobile React Native or Web Frontend Engineer
-          </p>
-        </section>
-        <List title="i like" content={likes} />
-        <List title="i dream of" content={dream} />
-      </main>
+      </section>
+      <section>
+        <p>
+          I&apos;am Suraji from Metro Lampung, Mobile & Web Frontend Engineer
+          with 2+ Years Experience in developing user interfaces. debugging and
+          building a web and mobile applications incorporating a range of
+          technologies.
+        </p>
+        <br />
+        <p>
+          Offering strong expertise in multiple programming languages, including
+          HTML, CSS, and Javascript Seeking to secure a challenging position as
+          a Mobile React Native or Web Frontend Engineer
+        </p>
+      </section>
+      <List title="i like" content={likes} />
+      <List title="i dream of" content={dream} />
     </Main>
   );
 }
