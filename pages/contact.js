@@ -82,13 +82,14 @@ export default function Contact() {
       </section>
       <section className="flex justify-center lg:justify-end items-center gap-x-4">
         {contacts.slice(1).map((contact, index) => (
-          <Image
-            key={index}
-            src={contact.icon}
-            width={25}
-            height={25}
-            alt={contact.alt}
-          />
+          <a key={index} href={contact.link} className="cursor-pointer">
+            <Image
+              src={contact.icon}
+              width={25}
+              height={25}
+              alt={contact.alt}
+            />
+          </a>
         ))}
       </section>
     </Main>

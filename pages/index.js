@@ -35,13 +35,14 @@ export default function Home({ allPosts }) {
       <section className="gap-y-5 grid max-w-sm mx-auto">
         <div className="grid grid-flow-col gap-x-4">
           {contacts.map((contact, index) => (
-            <Image
-              key={index}
-              src={contact.icon}
-              width={25}
-              height={25}
-              alt={contact.alt}
-            />
+            <a key={index} href={contact.link} className='cursor-pointer'>
+              <Image
+                src={contact.icon}
+                width={25}
+                height={25}
+                alt={contact.alt}
+              />
+            </a>
           ))}
         </div>
         <div className="grid grid-flow-col items-center gap-x-4">
