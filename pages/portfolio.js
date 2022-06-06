@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
-import { bootcampMei, portofolio1 } from "../assets";
+import { bootcamp1, bootcampMei, portofolio1 } from "../assets";
 import { IcPanah, IcSource } from "../assets/icons";
 import { DataHead, Header } from "../components/Atoms";
 import { Main } from "../components/molecules";
@@ -32,11 +32,11 @@ export default function Projects() {
       linkSource: "",
     },
     {
-      img: bootcampMei,
-      title: "Slicing Company by. Kawah Edukasi",
-      date: "Mei 2022",
+      img: bootcamp1,
+      title: "Slicing Personal Data by. Kawah Edukasi",
+      date: "April 2022",
       content:
-        "bootcamp bulan kedua dapat tugas dari kawah edukasi untuk membuat ui tentang perusahaan. ini menggunakan tailwind. react,js, javascript",
+        "bootcamp bulan pertama dapat tugas dari kawah edukasi untuk membuat ui tentang data diri. ini menggunakan tailwind. react,js, javascript",
       skill: [
         {
           title: "tailwind",
@@ -51,7 +51,7 @@ export default function Projects() {
           background: "bg-[#FCDC00]",
         },
       ],
-      linkVisit: "https://ajidk.vercel.app/",
+      linkVisit: "https://firstboot.netlify.app/",
       linkSource: "",
     },
     {
