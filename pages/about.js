@@ -11,7 +11,7 @@ export default function About() {
     <Main height={null}>
       <DataHead title="About" />
       <section>
-        <div className="flex justify-center mb-10 sm:mt-10">
+        <div className="flex justify-center mb-10 lg:mt-10">
           <Image
             src={Suraji}
             alt="suraji"
