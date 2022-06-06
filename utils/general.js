@@ -31,7 +31,7 @@ export const contacts = [
   {
     icon: IcFacebook,
     alt: "facebook",
-    link: "https://facebook.com/ajidk",
+    link: "https://facebook.com/adjik16",
   },
   {
     icon: IcInstagram,
