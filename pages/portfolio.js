@@ -103,7 +103,7 @@ export default function Projects() {
               </div>
               <div className="px-4 flex flex-col">
                 <a
-                  className="text-2xl lg:text-4xl leading-10 font-bold hover:underline"
+                  className="text-2xl lg:text-3xl leading-10 font-semibold hover:underline"
                   href={project.linkVisit}
                 >
                   {project.title}
