@@ -1,4 +1,4 @@
-import Suraji from "./suraji.jpg";
+import Suraji from "./suraji.webp";
 
 export { Suraji };
 

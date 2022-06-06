@@ -9,9 +9,9 @@ import { dream, likes } from "../utils/about";
 export default function About() {
   return (
     <Main height={null}>
-      <DataHead title="About | Suraji" />
+      <DataHead title="About" />
       <section>
-        <div className="flex justify-center">
+        <div className="flex justify-center mb-10 sm:mt-10">
           <Image
             src={Suraji}
             alt="suraji"

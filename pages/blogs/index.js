@@ -10,7 +10,7 @@ export default function index({ allPosts }) {
     <div
       className={`w-full max-w-5xl mx-auto text-gray-800 flex flex-col font-mono`}
     >
-      <DataHead title="Blogs | Suraji" />
+      <DataHead title="Blogs" />
       <Menu />
       <main className="px-5 lg:px-0 mt-7">
         <Header

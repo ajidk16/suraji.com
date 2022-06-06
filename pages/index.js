@@ -9,7 +9,7 @@ import { contacts } from "../utils/general";
 export default function Home({ allPosts }) {
   return (
     <Main>
-      <DataHead title="Home | Suraji" />
+      <DataHead title="Home" />
       <section className="flex items-center gap-y-4 lg:gap-y-0 flex-col-reverse lg:flex-row lg:justify-between">
         <div className="lg:gap-5 flex flex-col lg:w-[43%]">
           <h1 className="text-gray-700 text-4xl lg:text-5xl mb-4 lg:mb-0 font-bold text-center lg:text-left hidden lg:flex">
@@ -35,7 +35,7 @@ export default function Home({ allPosts }) {
       <section className="gap-y-5 grid max-w-sm mx-auto">
         <div className="grid grid-flow-col gap-x-4">
           {contacts.map((contact, index) => (
-            <a key={index} href={contact.link} className='cursor-pointer'>
+            <a key={index} href={contact.link} className="cursor-pointer">
               <Image
                 src={contact.icon}
                 width={25}
