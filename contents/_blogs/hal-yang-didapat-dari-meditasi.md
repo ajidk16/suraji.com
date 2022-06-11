@@ -1,6 +1,6 @@
 ---
 title: "Hal apakah yang kamu dapatkan melalui meditasi?"
-excerpt: "Dari pengalaman setelah berlatih meditasi, rutin setiap hari adalah meningkatnya kesabaran diikuti rasa damai, hidup lebih ringan, serasa tak ada beban banyak."
+excerpt: "Rutin setiap hari adalah meningkatnya kesabaran diikuti rasa damai, hidup lebih ringan, serasa tak ada beban banyak."
 coverImage: "/assets/blog/feedback-meditasi.png"
 date: "2022-06-10T01:15:24.927Z"
 author:

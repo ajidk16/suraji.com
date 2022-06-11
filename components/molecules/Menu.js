@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-export default function Menu() {
+export default function Menu({className}) {
   const router = useRouter();
   const menus = [
     {
@@ -69,7 +69,7 @@ export default function Menu() {
           ☰
         </button>
       </div>
-      <div className="hidden px-5 lg:px-0 lg:flex justify-between items-center">
+      <div className={`hidden px-5 lg:px-0 lg:flex justify-between items-center ${className}`}>
         <span className="uppercase text-base font-extrabold mr-10">
           <Link href="/">ajidk</Link>
         </span>

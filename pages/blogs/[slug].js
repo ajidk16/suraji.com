@@ -11,10 +11,10 @@ export default function Blog({ blog }) {
   !router.isFallback && !blog?.slug ? "error" : null;
 
   return (
-    <div className="w-full max-w-5xl mx-auto">
-      <Menu />
-      <div className="flex flex-col px-5 lg:px-0 mt-7">
-        <div className="text-4xl lg:text-6xl hover:underline capitalize">
+    <div className="w-full bg-gray-50">
+      <Menu className='max-w-5xl mx-auto' />
+      <div className="flex flex-col px-5 mt-7 lg:mt-0 lg:py-7 max-w-2xl mx-auto bg-white">
+        <div className="text-4xl hover:underline capitalize">
           <Link href={`${encodeURIComponent(blog.slug)}/`}>{blog.title}</Link>
         </div>
         <p className="mt-4">{blog.excerpt}</p>
