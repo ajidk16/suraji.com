@@ -54,7 +54,7 @@ export default function Menu({className}) {
                   }`}
                   onClick={() => setMenu(!Menu)}
                 >
-                  <Link href={menu.link}>{menu.title}</Link>
+                  <Link className="outline-none" href={menu.link}>{menu.title}</Link>
                 </div>
               );
             })}
@@ -63,9 +63,10 @@ export default function Menu({className}) {
       )}
       <div className="flex justify-between py-2 lg:hidden px-5 items-center">
         <div className={`uppercase font-extrabold text-2xl mr-10`}>
-          <Link href="/">ajidk</Link>
+          <Link href="/">
+            ajidk</Link>
         </div>
-        <button onClick={() => setMenu(!Menu)} className="text-3xl">
+        <button onClick={() => setMenu(!Menu)} className="text-3xl outline-none">
           ☰
         </button>
       </div>

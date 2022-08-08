@@ -46,7 +46,7 @@ export default function Contact() {
               className="flex flex-col gap-y-8"
               onSubmit={handleSubmit(onSubmit)}
             >
-              <div className="grid grid-cols-2 gap-x-4">
+              <div className="grid grid-cols-2 gap-x-4 outline-none">
                 <Input
                   register={register}
                   label="name"
@@ -65,13 +65,13 @@ export default function Contact() {
                 <textarea
                   placeholder="Hi there..."
                   {...register("message")}
-                  className="border-b border-b-gray-400 py-2"
+                  className="border-b border-b-gray-400 py-2 outline-none"
                 ></textarea>
               </div>
               <div className="grid grid-cols-3">
                 <button
                   type="submit"
-                  className="bg-green-500 capitalize hover:bg-transparent hover:border-2 hover:py-[6px] hover:border-green-500 hover:text-black py-2 px-5 text-white rounded-lg w-full"
+                  className="bg-green-500 capitalize hover:bg-transparent hover:border-2 hover:py-[6px] hover:border-green-500 hover:text-black py-2 px-5 text-white rounded-lg w-full outline-none"
                 >
                   send
                 </button>
