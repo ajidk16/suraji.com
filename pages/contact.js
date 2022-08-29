@@ -1,13 +1,12 @@
 import Image from "next/image";
 import { useRouter } from "next/router";
+import Script from "next/script";
 import { useForm } from "react-hook-form";
 import { IcEnvelope, IcWa } from "../assets/icons";
 import { DataHead, Input, Main } from "../components";
 import { contacts } from "../utils/general";
 
 export default function Contact() {
-  const router = useRouter();
-  console.log(router);
   const {
     register,
     handleSubmit,
@@ -23,6 +22,21 @@ export default function Contact() {
   return (
     <Main height="lg:h-screen h-screen">
       <DataHead title="Contact" />
+
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <section className="grid gap-y-10 lg:gap-y-0 lg:grid-cols-2">
         <div className="flex justify-evenly flex-col">
           <div>

@@ -1,5 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
+import Script from "next/script";
 import { bootcamp1, bootcampMei, portofolio1 } from "../assets";
 import { IcPanah, IcSource } from "../assets/icons";
 import { DataHead, Header } from "../components/Atoms";
@@ -81,6 +82,20 @@ export default function Projects() {
   return (
     <Main height="h-auto">
       <DataHead title="Portfolio" />
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
+      />
+      <Script id="ga-script" strategy="lazyOnload">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            page_path: window.location.pathname,
+          });
+        `}
+      </Script>
       <main className="mt-7">
         <Header
           title="portfolio"
