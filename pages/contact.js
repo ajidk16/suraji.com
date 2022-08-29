@@ -37,6 +37,11 @@ export default function Contact() {
           });
         `}
       </Script>
+      <Script
+        async
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5052361639917271"
+        crossorigin="anonymous"
+      ></Script>
       <section className="grid gap-y-10 lg:gap-y-0 lg:grid-cols-2">
         <div className="flex justify-evenly flex-col">
           <div>
