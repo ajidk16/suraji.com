@@ -1,31 +1,17 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Script from "next/script";
-import { Suraji } from "../assets/images";
-import { DataHead } from "../components/Atoms";
-import { Main } from "../components/molecules";
-import List from "../components/molecules/List";
-import { dream, likes } from "../utils/about";
+import Image from 'next/image';
+
+import { Suraji } from '../assets/images';
+import { DataHead } from '../components/Atoms';
+import { Main } from '../components/molecules';
+import List from '../components/molecules/List';
+import { dream, likes } from '../utils/about';
 
 export default function About() {
-  console.log(process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS);
+  console.log(process.env.NEXT_PUBLIC_GA);
   return (
     <Main height={null}>
       <DataHead title="About" />
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script id="ga-script" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
       <section>
         <div className="flex justify-center mb-10 lg:mt-10">
           <Image

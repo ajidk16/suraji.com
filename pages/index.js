@@ -1,30 +1,16 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
-import { Suraji } from "../assets/images";
-import { DataHead, Main } from "../components";
-import { getAllBlogs } from "../lib/blogs";
-import { contacts } from "../utils/general";
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { Suraji } from '../assets/images';
+import { DataHead, Main } from '../components';
+import { getAllBlogs } from '../lib/blogs';
+import { contacts } from '../utils/general';
 
 export default function Home({ allPosts }) {
   return (
     <Main>
       <DataHead title="Home" />
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script id="ga-script" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
       <section className="flex items-center gap-y-4 lg:gap-y-0 flex-col-reverse lg:flex-row lg:justify-between">
         <div className="lg:gap-5 flex flex-col lg:w-[43%]">
           <h1 className="text-gray-700 text-4xl lg:text-5xl mb-4 lg:mb-0 font-bold text-center lg:text-left hidden lg:flex">

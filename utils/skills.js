@@ -9,6 +9,6 @@ export const skills = [
   },
   {
     title: "Programming Languages",
-    subtitle: "PHP / Javascript",
+    subtitle: "PHP / Javascript / TypeScript",
   },
 ];

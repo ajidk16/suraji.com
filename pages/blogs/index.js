@@ -1,10 +1,10 @@
-import { format, parseISO } from "date-fns";
-import Image from "next/image";
-import Link from "next/link";
-import Script from "next/script";
-import { DataHead, Header } from "../../components/Atoms";
-import { Main, Menu } from "../../components/molecules";
-import { getAllBlogs } from "../../lib/blogs";
+import { format, parseISO } from 'date-fns';
+import Image from 'next/image';
+import Link from 'next/link';
+
+import { DataHead, Header } from '../../components/Atoms';
+import { Menu } from '../../components/molecules';
+import { getAllBlogs } from '../../lib/blogs';
 
 export default function index({ allPosts }) {
   return (
@@ -12,20 +12,6 @@ export default function index({ allPosts }) {
       className={`w-full max-w-5xl mx-auto text-gray-800 flex flex-col font-mono`}
     >
       <DataHead title="Blogs" />
-      <Script
-        strategy="lazyOnload"
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
-      />
-      <Script id="ga-script" strategy="lazyOnload">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
-            page_path: window.location.pathname,
-          });
-        `}
-      </Script>
       <Menu />
       <main className="px-5 lg:px-0 mt-7">
         <Header
