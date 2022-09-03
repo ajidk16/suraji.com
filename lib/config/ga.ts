@@ -1,3 +1,8 @@
+declare global {
+    interface Window {
+        gtag: any;
+    }
+}
 export const pageview = (url: any) => {
     if (window !== undefined) {
         window.gtag("config", process.env.NEXT_PUBLIC_GA, {
