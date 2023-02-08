@@ -2,7 +2,7 @@
 title: "Debouncing: how to use it"
 excerpt: "Debouncing is a technique used in electronic systems to filter out transient electrical noise from an input signal."
 coverImage: "/assets/blog/debounce.png"
-date: "2023-02-08T01:52:35.911Z"
+date: "2023-02-05T01:52:35.911Z"
 author:
   name: "Suraji"
   picture: "/assets/blog/authors/suraji.webp"
