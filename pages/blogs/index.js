@@ -1,10 +1,10 @@
-import { format, parseISO } from 'date-fns';
-import Image from 'next/image';
-import Link from 'next/link';
+import { format, parseISO } from "date-fns";
+import Image from "next/image";
+import Link from "next/link";
 
-import { DataHead, Header } from '../../components/Atoms';
-import { Menu } from '../../components/molecules';
-import { getAllBlogs } from '../../lib/blogs';
+import { DataHead, Header } from "../../components/Atoms";
+import { Menu } from "../../components/molecules";
+import { getAllBlogs } from "../../lib/blogs";
 
 export default function index({ allPosts }) {
   return (
@@ -29,13 +29,16 @@ export default function index({ allPosts }) {
               >
                 <Link href={`/blogs/${encodeURIComponent(slug)}`}>
                   <div>
-                    <Image
-                      src={coverImage || ""}
-                      alt={title}
-                      width={500}
-                      height={400}
-                      className="rounded-md"
-                    />
+                    {coverImage && (
+                      <Image
+                        src={coverImage || ""}
+                        alt={title}
+                        width={500}
+                        height={400}
+                        className="rounded-md bg-cover"
+                        layout="responsive"
+                      />
+                    )}
                     <div className="p-2">
                       <h1 className="text-lg font-bold leading-7 capitalize">
                         {title}
