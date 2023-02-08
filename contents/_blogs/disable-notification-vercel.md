@@ -11,7 +11,7 @@ ogImage:
 ---
 
 Do you use Vercel? I am a user of Vercel. When I deploy, I receive a notification in my email every time. this causes a lot of spam in my email. I have found a solution to this problem, 
-You can create a file called vercel.json in your project:
+You can create a file called `vercel.json` in your project:
 
 ```javascript
 {
