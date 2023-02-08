@@ -1,5 +1,23 @@
 export const experiences = [
   {
+    start_date: "june 2022",
+    end_date: "december 2022",
+    company: "Opinia",
+    position: "Frontend Developer",
+    duty: [
+      "Help Slicing User Interface with Next.JS",
+      "Integate to endpoint",
+      "Connect to google analytics",
+    ],
+  },
+  {
+    start_date: "mei 2022",
+    end_date: "june 2022",
+    company: "KlinikMe",
+    position: "Frontend Developer",
+    duty: ["Help Slicing User Interface with Next.JS"],
+  },
+  {
     start_date: "march 2022",
     end_date: "april 2022",
     company: "dana syariah",
