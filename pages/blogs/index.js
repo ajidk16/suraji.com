@@ -45,8 +45,9 @@ export default function index({ allPosts }) {
                       </h1>
                       <div className="text-sm mb-2 text-gray-700 dark:text-gray-300">
                         <span>
-                          {format(parseISO(date), "MMMM d, yyyy")} • 4 min red •
-                          bendera{" "}
+                          {format(parseISO(date), "MMMM d, yyyy")} 
+                          {/* • 4 min red •
+                          bendera{" "} */}
                         </span>
                       </div>
                       <p>{excerpt}</p>
