@@ -1,7 +1,7 @@
 ---
 title: "Disable notification in vercel"
 excerpt: "Do you use Vercel? I am a user of Vercel. When I deploy, I receive a notification in my email every time."
-coverImage: "/assets/blog/debounce.png"
+coverImage: "/assets/blog/disable-notification.png"
 date: "2023-02-09T01:52:35.911Z"
 author:
   name: "Suraji"
