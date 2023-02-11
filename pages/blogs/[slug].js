@@ -28,6 +28,7 @@ export default function Blog({ blog }) {
             / {format(parseISO(blog?.date), "MMMM d, yyyy")}
           </div>
           {/* <div>4 min red • bendera</div> */}
+          
         </div>
         <BlogGithub content={blog?.content} />
       </div>
