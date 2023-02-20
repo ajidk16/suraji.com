@@ -29,7 +29,7 @@ export default function index({ allPosts }) {
               >
                 <Link href={`/blogs/${encodeURIComponent(slug)}`}>
                   <div>
-                    {coverImage && (
+                    {/* {coverImage && (
                       <Image
                         src={coverImage || ""}
                         alt={title}
@@ -38,7 +38,7 @@ export default function index({ allPosts }) {
                         className="rounded-md bg-cover"
                         layout="responsive"
                       />
-                    )}
+                    )} */}
                     <div className="p-2">
                       <h1 className="text-lg font-bold leading-7 capitalize">
                         {title}

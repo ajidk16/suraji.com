@@ -2,7 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { useState } from "react";
 
-export default function Menu({className}) {
+export default function Menu({ className = "" }) {
   const router = useRouter();
   const menus = [
     {
@@ -23,7 +23,6 @@ export default function Menu({className}) {
     },
   ];
   const [Menu, setMenu] = useState(false);
-  console.log(Menu);
 
   return (
     <main className="sticky top-0 z-50 bg-white">
@@ -54,7 +53,9 @@ export default function Menu({className}) {
                   }`}
                   onClick={() => setMenu(!Menu)}
                 >
-                  <Link className="outline-none" href={menu.link}>{menu.title}</Link>
+                  <Link className="outline-none" href={menu.link}>
+                    {menu.title}
+                  </Link>
                 </div>
               );
             })}
@@ -63,15 +64,19 @@ export default function Menu({className}) {
       )}
       <div className="flex justify-between py-2 lg:hidden px-5 items-center">
         <div className={`uppercase font-extrabold text-2xl mr-10`}>
-          <Link href="/">
-            ajidk</Link>
+          <Link href="/">ajidk</Link>
         </div>
-        <button onClick={() => setMenu(!Menu)} className="text-3xl outline-none">
+        <button
+          onClick={() => setMenu(!Menu)}
+          className="text-3xl outline-none"
+        >
           ☰
         </button>
       </div>
-      <div className={`hidden px-5 lg:px-0 lg:flex justify-between items-center ${className}`}>
-        <span className="uppercase text-base font-extrabold mr-10">
+      <div
+        className={`hidden px-5 lg:px-0 lg:flex justify-between items-center py-4 ${className}`}
+      >
+        <span className="uppercase text-lg font-extrabold mr-10">
           <Link href="/">ajidk</Link>
         </span>
         <div className="flex gap-x-2 items-center">
@@ -82,7 +87,7 @@ export default function Menu({className}) {
             return (
               <Link href={menu.link} key={index}>
                 <span
-                  className={`capitalize my-3 text-sm py-2 px-5 hover:rounded-md hover:bg-green-500 ${
+                  className={`capitalize my-3 text-base py-2 px-5 hover:rounded-md hover:bg-green-500 ${
                     isActive ? "bg-green-500 rounded-md text-white" : null
                   } hover:text-white cursor-pointer`}
                 >
